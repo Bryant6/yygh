@@ -68,7 +68,7 @@ export default {
     data(){
         return{
             current:1,  //当前页
-            limit:3,    //每页显示记录数
+            limit:8,    //每页显示记录数
             searchObj:{},   //条件封装对象
             list:[],    //每页数据集合
             total:0,    //总记录数
