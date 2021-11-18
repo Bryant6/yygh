@@ -42,15 +42,11 @@
 
         <el-dialog title="导入" :visible.sync="dialogImportVisible" width="480px">
             <el-form label-position="right" label-width="170px">
-
-            <el-form-item label="文件">
-            <el-upload
-            :multiple="false"
             :on-success="onUploadSuccess"
             :action="'http://localhost:8202/admin/cmn/dict/importData'"
             class="upload-demo">
             <el-button size="small" type="primary">点击上传</el-button>
-            <div slot="tip" class="el-upload__tip">只能上传xls文件，且不超过500kb</div>
+            <div slot="tip" class="el-upload__tip">只能上传excel文件，且不超过500kb</div>
             </el-upload>
             </el-form-item>
 

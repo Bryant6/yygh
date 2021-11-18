@@ -23,5 +23,19 @@ export default {
         url: `/admin/cmn/dict/findChildData/${dictCode}`,
         method: 'get'
       })
+  },
+  updateStatus(id, status) {
+    return request({
+      url: `/admin/hosp/hospital/updateHospStatus/${id}/${status}`,
+      method: 'get'
+    })
+  },
+  //查看医院详情
+  getHospById(id) {
+    return request ({
+      url: `/admin/hosp/hospital/show/${id}`,
+      method: 'get'
+    })
   }
+
 }
